@@ -1,0 +1,9 @@
+// Import Custom Variables File 
+@import './custom/custom-variables';
+// Import Google Fonts 
+
+// Required Bootstrap Files
+@import "../../node_modules/bootstrap/scss/bootstrap";
+// Import Custom Classes File 
+@import './mixins/transintion';
+@import './mixins/flex';

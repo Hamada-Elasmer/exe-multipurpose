@@ -1,0 +1,14 @@
+@mixin transition-duration($time) {
+    -webkit-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time;
+}
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -o-transition: $value;
+    transition: $value;
+}
+@mixin animation($value) {
+    -webkit-animation: $value;
+    animation: $value;
+}
