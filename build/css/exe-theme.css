@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:wght@400;500;700&display=swap");
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -31,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Roboto", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -54,7 +55,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5763,7 +5764,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5876,7 +5877,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9647,6 +9648,193 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+/* ::  0.3 Top Area CSS */
+.top-area {
+  background-color: #363636;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-transform: capitalize;
+  font-size: .9rem;
+}
+
+.top-area .top-area-link,
+.top-area .top-area-link-green,
+.top-area .top-area-social-icon {
+  color: inherit;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.top-area .top-area-link:hover,
+.top-area .top-area-link-green:hover,
+.top-area .top-area-social-icon:hover {
+  color: #e5493a;
+  text-decoration: none;
+}
+
+.top-area .top-area-link-green {
+  color: #8dc63f;
+  position: relative;
+}
+
+.top-area .top-area-link-green::before {
+  content: "/";
+  position: absolute;
+  margin-left: -.3rem;
+}
+
+.top-area .social-links {
+  vertical-align: middle;
+}
+
+.top-area .social-links .top-area-social-icon {
+  font-size: 1.2rem;
+  padding: 0 0.2rem;
+}
+
+/* ::  0.4 Navbar Area CSS */
+.navbar {
+  font-weight: 400;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.navbar .nav-link-icon {
+  color: #363636;
+  padding: 0 .5rem;
+}
+
+.navbar .nav-link-icon:hover, .navbar .nav-link-icon:focus {
+  color: #e5493a !important;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar .card-area {
+  position: relative;
+}
+
+.navbar .card-area::after {
+  position: absolute;
+  content: "5";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #e5493a;
+  top: -7px;
+  left: 17px;
+  color: #fff;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.navbar-light .navbar-brand {
+  color: #363636 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #555555 !important;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+  position: absolute;
+  content: '';
+  left: 9px;
+  top: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e5493a;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #e5493a !important;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .nav-link:focus::before {
+  width: 30%;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #e5493a !important;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.navbar-light .navbar-nav .show > .nav-link::before,
+.navbar-light .navbar-nav .active > .nav-link::before,
+.navbar-light .navbar-nav .nav-link.show::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+  width: 30%;
+}
+
+/* ::  0.5 Introduction Area CSS */
+.intro-area {
+  overflow-x: hidden;
+}
+
+.intro-area .carousel-inner .carousel-caption {
+  top: 30%;
+}
+
+.intro-area .carousel-control-prev,
+.intro-area .carousel-control-next {
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+.intro-area .carousel-control-prev:hover i,
+.intro-area .carousel-control-next:hover i {
+  background-color: rgba(250, 250, 250, 0.15) !important;
+}
+
+.intro-area .carousel-control-prev i,
+.intro-area .carousel-control-next i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #363636;
+  color: #fff;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.intro-area .carousel-control-prev {
+  left: -5.1rem;
+}
+
+.intro-area .carousel-control-prev i {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.intro-area .carousel-control-next {
+  right: -5.1rem;
+}
+
+.intro-area .carousel-control-next i {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
 }
 
 /*# sourceMappingURL=exe-theme.css.map */

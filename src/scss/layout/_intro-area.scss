@@ -1,0 +1,41 @@
+/* ::  0.5 Introduction Area CSS */
+.intro-area {
+    overflow-x: hidden;
+    .carousel-inner {
+        .carousel-caption {
+            top: 30%;
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        font-size: 1.2rem;
+        opacity: 1;
+        &:hover {
+            i {
+                background-color: rgba($body-bg, .15) !important;
+            }
+        }
+        i {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: $darkcolor-3;
+            color: $white;
+            @include transition-duration(500ms);
+        }
+    }
+    .carousel-control-prev {
+        left: -5.1rem;
+        i {
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+    }
+    .carousel-control-next {
+        right: -5.1rem;
+        i {
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+    }
+}

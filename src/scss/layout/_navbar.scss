@@ -1,0 +1,77 @@
+/* ::  0.4 Navbar Area CSS */
+.navbar {
+    font-weight: 400;
+    @include transition-duration(500ms);
+    .nav-link-icon {
+        color: $darkcolor-3;
+        padding: 0 .5rem;
+        &:hover ,
+        &:focus {
+          color: $redcolor !important;
+          @include transition(500ms);
+        }
+    }
+    .card-area {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "5";
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: $redcolor;
+            top: -7px;
+            left: 17px;
+            color: #fff;
+            text-align: center;
+            font-size: .9rem;
+        }
+    }
+}
+.navbar-brand {
+    // font-size: 1.5rem;
+}
+.navbar-light {
+    .navbar-brand {
+        color: $darkcolor-3 !important;
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $graycolor-2 !important;
+        @include transition-duration(500ms);
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 9px;
+            top: 0;
+            width: 0;
+            height: 2px;
+            background-color: $redcolor;
+            @include transition(500ms);
+        }
+  
+        &:hover ,
+        &:focus {
+          color: $redcolor !important;
+          @include transition(500ms);
+
+          &::before {
+              width: 30%;
+          }
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $redcolor !important;
+        @include transition(500ms);
+        &::before {
+            width:  30%;
+        }
+      }
+    }
+  }
